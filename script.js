@@ -3,8 +3,14 @@
 // Constructor Functions
 
 const Person = function(firstName, birthYear){
+    // instance properties
     this.firstName = firstName;
     this.birthYear = birthYear; 
+
+    // never do this!
+    // this.calcAge = function() {
+    //     2037 - this.birthYear
+    // };
 };
 
 const krzysztof = new Person('Krzysztof', 1989);
